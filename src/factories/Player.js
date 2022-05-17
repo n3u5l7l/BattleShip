@@ -1,4 +1,5 @@
-import { gameBoard } from "./gameBoard.js";
+import { gameBoard } from "./GameBoard.js";
+
 class Player {
   #gameBoard;
   #shipSpotted;
