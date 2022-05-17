@@ -29,7 +29,7 @@ import { gameBoard } from "../factories/GameBoard.js";
 
 import { activeBox, errorBox } from "./highlightShip.js";
 
-import { addBeginButton } from "./finishSetup.js";
+import { addBeginButton } from "./beginButton.js";
 
 let shipUsed = { count: 0 };
 let currFour = true;

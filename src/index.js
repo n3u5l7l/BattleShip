@@ -9,7 +9,7 @@ import {
   currOne,
   verticalCheck,
 } from "./menu_helper/addShip.js";
-import { addBeginButton } from "./menu_helper/finishSetup.js";
+import { addBeginButton } from "./menu_helper/beginButton.js";
 import { generateFour } from "./menu_helper/generateShip.js";
 import {
   highlightOneBlockShip,
