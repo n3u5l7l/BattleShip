@@ -1,6 +1,6 @@
 import { randomize } from "./randomizeShip.js";
-import { player } from "../fixed/player.js";
-import { gameBoard } from "../fixed/gameBoard.js";
+import { player } from "../factories/Player.js";
+import { gameBoard } from "../factories/GameBoard.js";
 
 function addBeginButton() {
   const startButton = document.createElement("button");

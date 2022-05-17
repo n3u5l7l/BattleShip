@@ -1,5 +1,4 @@
-import { gameBoard } from "../fixed/gameBoard.js";
-
+import { gameBoard } from "../factories/GameBoard.js";
 function checkFourPlacementHorizontal(x, y, whatBoard) {
   return (
     !gameBoard[whatBoard][y][x] &&

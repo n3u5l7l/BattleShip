@@ -25,7 +25,7 @@ generateThree,
 generateFour,
 } from "./generateShip.js";
 
-import { gameBoard } from "../fixed/gameBoard.js";
+import { gameBoard } from "../factories/GameBoard.js";
 
 import { activeBox, errorBox } from "./highlightShip.js";
 
