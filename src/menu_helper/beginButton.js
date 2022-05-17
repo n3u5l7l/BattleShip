@@ -1,5 +1,6 @@
 import { randomize } from "./randomizeShip.js";
 import { player } from "../factories/Player.js";
+import { enemy } from "../factories/Player.js";
 import { gameBoard } from "../factories/GameBoard.js";
 
 function addBeginButton() {
@@ -36,7 +37,7 @@ function addBoardEvents(thisBoard) {
       if (gameBoard.whosTurn === "player") {
         player.attack(e.target.dataset.x, e.target.dataset.y, e.target);
         setTimeout(() => {
-          player.randomAttack();
+          enemy.randomAttack();
         }, 1000);
       }
     }
@@ -51,7 +52,7 @@ function addBoardEvents(thisBoard) {
       if (gameBoard.whosTurn === "player") {
         player.attack(e.target.dataset.x, e.target.dataset.y, e.target);
         setTimeout(() => {
-          player.randomAttack();
+          enemy.randomAttack();
         }, 1000);
       }
     }
