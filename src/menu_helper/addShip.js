@@ -10,7 +10,7 @@ import {
   
 import {
 updateFourBlockShip,
-updateFourBlockShipVertical,
+updateFourBlockShipVertically,
 updateThreeBlockShip,
 updateThreeBlockShipVertically,
 updateTwoBlockShip,
@@ -65,7 +65,7 @@ if (vertical) {
     gameBoard.assignEnemyShip("four-block-0", 3, whereX, whereY + 3, true);
     }
 
-    updateFourBlockShipVertical(whereX, whereY, whatBoard, gameBoard);
+    updateFourBlockShipVertically(whereX, whereY, whatBoard, gameBoard);
 } else {
     const whereY = Number(y);
     if (whereX > 6) {
