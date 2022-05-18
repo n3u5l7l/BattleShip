@@ -168,3 +168,80 @@ document.querySelector(".rotate").addEventListener("click", function (e) {
     rotateTwoBlockShip(gridColumns);
   }
 });
+
+function cleanBoxSymbol(boxes) {
+  boxes.forEach((symbol) => {
+    symbol.textContent = "";
+    symbol.style.display = "none";
+    symbol.removeAttribute("style");
+  });
+}
+function cleanPlayerBoard() {
+  const PLAYER_BOARD_BOXES = document.querySelectorAll(".playerBoard > .box");
+  PLAYER_BOARD_BOXES.forEach((box) => {
+    const newBox = box.cloneNode(true);
+    box.parentNode.replaceChild(newBox, box);
+    newBox.style.pointerEvents = "";
+    Object.keys(newBox.dataset).forEach((key) => {
+      if (key === "x" || key === "y") {
+        return;
+      }
+      delete newBox.dataset[key];
+    });
+    newBox.className = "box";
+    newBox.removeAttribute("style");
+  });
+  const PLAYER_BOARD_BOX_SYMBOL = document.querySelectorAll(
+    ".playerBoard > .box > .symbol"
+  );
+
+  cleanBoxSymbol(PLAYER_BOARD_BOX_SYMBOL);
+}
+
+function cleanComputerBoard() {
+  const COMPUTER_BOARD_BOXES = document.querySelectorAll(
+    ".computerBoard > .box"
+  );
+  COMPUTER_BOARD_BOXES.forEach((box) => {
+    box.className = "box";
+    box.removeAttribute("style");
+  });
+
+  const COMPUTER_BOARD_BOXES_SYMBOL = document.querySelectorAll(
+    ".computerBoard > .box > .symbol"
+  );
+  cleanBoxSymbol(COMPUTER_BOARD_BOXES_SYMBOL);
+
+  const oldComputerBoard = document.querySelector(".computerBoard");
+  const newComputerBoard = document
+    .querySelector(".computerBoard")
+    .cloneNode(true);
+  document
+    .querySelector(".computerBoardContainer")
+    .replaceChild(newComputerBoard, oldComputerBoard);
+}
+
+ddocument.querySelector(".restart").addEventListener(
+  "click", 
+  function (e) {
+    document.querySelector(".reset").click();
+
+    document.querySelector(".finish").style.display = "none";
+    document.querySelector(".finish").style.opacity = "0";
+
+    document.querySelector("form").style.display = "flex";
+    document
+      .querySelector("form")
+      .insertBefore(
+        document.querySelector(".playerBoard"),
+        document.querySelector(".reset")
+      );
+
+    document.querySelector(".mainContent").style.display = "none";
+    document.querySelector(".mainContent").style.filter = "";
+    document.querySelector(".mainContent").style.pointerEvents = "";
+
+    cleanPlayerBoard();
+
+    cleanComputerBoard();
+});
