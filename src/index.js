@@ -221,7 +221,7 @@ function cleanComputerBoard() {
     .replaceChild(newComputerBoard, oldComputerBoard);
 }
 
-ddocument.querySelector(".restart").addEventListener(
+document.querySelector(".restart").addEventListener(
   "click", 
   function (e) {
     document.querySelector(".reset").click();
