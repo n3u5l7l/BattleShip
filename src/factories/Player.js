@@ -1,5 +1,4 @@
-import { gameBoard } from "./GameBoard.js";
-
+import { gameBoard } from "./gameBoard.js";
 class Player {
   #gameBoard;
   #shipSpotted;
@@ -261,6 +260,21 @@ class Player {
     this.#shipSpotted = false;
     this.#foundDirLength = 0;
     this.#foundDirMove = [];
+  }
+
+  reset() {
+    this.#foundDir = false;
+    this.#shipSpotted = false;
+    this.#foundDirLength = 0;
+    this.#foundDirMove = [];
+    this.#alreadyHit = [];
+    this.#smartMoveOn = [];
+    for (let i = 0; i < 10; i++) {
+      this.#alreadyHit[i] = [];
+      for (let j = 0; j < 10; j++) {
+        this.#alreadyHit[i].push(false);
+      }
+    }
   }
 }
 
