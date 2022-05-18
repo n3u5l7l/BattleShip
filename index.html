@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleShip</title>
+    <link rel="stylesheet" href="../style/style.css">
+<script defer src="bundle9b93d90d1875b84a6be4.js"></script></head>
+<body>
+    <form action="" method="post">
+        <div class="header">BattleShip</div>
+        <button class="randomize">Randomize</button>
+        <div class="whatOption">Place your four-block ship</div>
+        <button class="rotate">Rotate</button>
+        <div class="selectShip">
+            <div class="fourBlockShip" draggable="true">
+                <div class="shipPart" ></div>
+                <div class="shipPart" ></div>
+                <div class="shipPart" ></div>
+                <div class="shipPart" ></div>
+            </div>
+        </div>
+        <div class="playerBoard">
+            <div class="box" data-y="0" data-x="0"><div class="symbol"></div></div>
+            <div class="box" data-y="0" data-x="1"><div class="symbol"></div></div>
+            <div class="box" data-y="0" data-x="2"><div class="symbol"></div></div>
+            <div class="box" data-y="0" data-x="3"><div class="symbol"></div></div>
+            <div class="box" data-y="0" data-x="4"><div class="symbol"></div></div>
+            <div class="box" data-y="0" data-x="5"><div class="symbol"></div></div>
+            <div class="box" data-y="0" data-x="6"><div class="symbol"></div></div>
+            <div class="box" data-y="0" data-x="7"><div class="symbol"></div></div>
+            <div class="box" data-y="0" data-x="8"><div class="symbol"></div></div>
+            <div class="box" data-y="0" data-x="9"><div class="symbol"></div></div>
+            <div class="box" data-y="1" data-x="0"><div class="symbol"></div></div>
+            <div class="box" data-y="1" data-x="1"><div class="symbol"></div></div>
+            <div class="box" data-y="1" data-x="2"><div class="symbol"></div></div>
+            <div class="box" data-y="1" data-x="3"><div class="symbol"></div></div>
+            <div class="box" data-y="1" data-x="4"><div class="symbol"></div></div>
+            <div class="box" data-y="1" data-x="5"><div class="symbol"></div></div>
+            <div class="box" data-y="1" data-x="6"><div class="symbol"></div></div>
+            <div class="box" data-y="1" data-x="7"><div class="symbol"></div></div>
+            <div class="box" data-y="1" data-x="8"><div class="symbol"></div></div>
+            <div class="box" data-y="1" data-x="9"><div class="symbol"></div></div>
+            <div class="box" data-y="2" data-x="0"><div class="symbol"></div></div>
+            <div class="box" data-y="2" data-x="1"><div class="symbol"></div></div>
+            <div class="box" data-y="2" data-x="2"><div class="symbol"></div></div>
+            <div class="box" data-y="2" data-x="3"><div class="symbol"></div></div>
+            <div class="box" data-y="2" data-x="4"><div class="symbol"></div></div>
+            <div class="box" data-y="2" data-x="5"><div class="symbol"></div></div>
+            <div class="box" data-y="2" data-x="6"><div class="symbol"></div></div>
+            <div class="box" data-y="2" data-x="7"><div class="symbol"></div></div>
+            <div class="box" data-y="2" data-x="8"><div class="symbol"></div></div>
+            <div class="box" data-y="2" data-x="9"><div class="symbol"></div></div>
+            <div class="box" data-y="3" data-x="0"><div class="symbol"></div></div>
+            <div class="box" data-y="3" data-x="1"><div class="symbol"></div></div>
+            <div class="box" data-y="3" data-x="2"><div class="symbol"></div></div>
+            <div class="box" data-y="3" data-x="3"><div class="symbol"></div></div>
+            <div class="box" data-y="3" data-x="4"><div class="symbol"></div></div>
+            <div class="box" data-y="3" data-x="5"><div class="symbol"></div></div>
+            <div class="box" data-y="3" data-x="6"><div class="symbol"></div></div>
+            <div class="box" data-y="3" data-x="7"><div class="symbol"></div></div>
+            <div class="box" data-y="3" data-x="8"><div class="symbol"></div></div>
+            <div class="box" data-y="3" data-x="9"><div class="symbol"></div></div>
+            <div class="box" data-y="4" data-x="0"><div class="symbol"></div></div>
+            <div class="box" data-y="4" data-x="1"><div class="symbol"></div></div>
+            <div class="box" data-y="4" data-x="2"><div class="symbol"></div></div>
+            <div class="box" data-y="4" data-x="3"><div class="symbol"></div></div>
+            <div class="box" data-y="4" data-x="4"><div class="symbol"></div></div>
+            <div class="box" data-y="4" data-x="5"><div class="symbol"></div></div>
+            <div class="box" data-y="4" data-x="6"><div class="symbol"></div></div>
+            <div class="box" data-y="4" data-x="7"><div class="symbol"></div></div>
+            <div class="box" data-y="4" data-x="8"><div class="symbol"></div></div>
+            <div class="box" data-y="4" data-x="9"><div class="symbol"></div></div>
+            <div class="box" data-y="5" data-x="0"><div class="symbol"></div></div>
+            <div class="box" data-y="5" data-x="1"><div class="symbol"></div></div>
+            <div class="box" data-y="5" data-x="2"><div class="symbol"></div></div>
+            <div class="box" data-y="5" data-x="3"><div class="symbol"></div></div>
+            <div class="box" data-y="5" data-x="4"><div class="symbol"></div></div>
+            <div class="box" data-y="5" data-x="5"><div class="symbol"></div></div>
+            <div class="box" data-y="5" data-x="6"><div class="symbol"></div></div>
+            <div class="box" data-y="5" data-x="7"><div class="symbol"></div></div>
+            <div class="box" data-y="5" data-x="8"><div class="symbol"></div></div>
+            <div class="box" data-y="5" data-x="9"><div class="symbol"></div></div>
+            <div class="box" data-y="6" data-x="0"><div class="symbol"></div></div>
+            <div class="box" data-y="6" data-x="1"><div class="symbol"></div></div>
+            <div class="box" data-y="6" data-x="2"><div class="symbol"></div></div>
+            <div class="box" data-y="6" data-x="3"><div class="symbol"></div></div>
+            <div class="box" data-y="6" data-x="4"><div class="symbol"></div></div>
+            <div class="box" data-y="6" data-x="5"><div class="symbol"></div></div>
+            <div class="box" data-y="6" data-x="6"><div class="symbol"></div></div>
+            <div class="box" data-y="6" data-x="7"><div class="symbol"></div></div>
+            <div class="box" data-y="6" data-x="8"><div class="symbol"></div></div>
+            <div class="box" data-y="6" data-x="9"><div class="symbol"></div></div>
+            <div class="box" data-y="7" data-x="0"><div class="symbol"></div></div>
+            <div class="box" data-y="7" data-x="1"><div class="symbol"></div></div>
+            <div class="box" data-y="7" data-x="2"><div class="symbol"></div></div>
+            <div class="box" data-y="7" data-x="3"><div class="symbol"></div></div>
+            <div class="box" data-y="7" data-x="4"><div class="symbol"></div></div>
+            <div class="box" data-y="7" data-x="5"><div class="symbol"></div></div>
+            <div class="box" data-y="7" data-x="6"><div class="symbol"></div></div>
+            <div class="box" data-y="7" data-x="7"><div class="symbol"></div></div>
+            <div class="box" data-y="7" data-x="8"><div class="symbol"></div></div>
+            <div class="box" data-y="7" data-x="9"><div class="symbol"></div></div>
+            <div class="box" data-y="8" data-x="0"><div class="symbol"></div></div>
+            <div class="box" data-y="8" data-x="1"><div class="symbol"></div></div>
+            <div class="box" data-y="8" data-x="2"><div class="symbol"></div></div>
+            <div class="box" data-y="8" data-x="3"><div class="symbol"></div></div>
+            <div class="box" data-y="8" data-x="4"><div class="symbol"></div></div>
+            <div class="box" data-y="8" data-x="5"><div class="symbol"></div></div>
+            <div class="box" data-y="8" data-x="6"><div class="symbol"></div></div>
+            <div class="box" data-y="8" data-x="7"><div class="symbol"></div></div>
+            <div class="box" data-y="8" data-x="8"><div class="symbol"></div></div>
+            <div class="box" data-y="8" data-x="9"><div class="symbol"></div></div>
+            <div class="box" data-y="9" data-x="0"><div class="symbol"></div></div>
+            <div class="box" data-y="9" data-x="1"><div class="symbol"></div></div>
+            <div class="box" data-y="9" data-x="2"><div class="symbol"></div></div>
+            <div class="box" data-y="9" data-x="3"><div class="symbol"></div></div>
+            <div class="box" data-y="9" data-x="4"><div class="symbol"></div></div>
+            <div class="box" data-y="9" data-x="5"><div class="symbol"></div></div>
+            <div class="box" data-y="9" data-x="6"><div class="symbol"></div></div>
+            <div class="box" data-y="9" data-x="7"><div class="symbol"></div></div>
+            <div class="box" data-y="9" data-x="8"><div class="symbol"></div></div>
+            <div class="box" data-y="9" data-x="9"><div class="symbol"></div></div>
+        </div>
+        <button class="reset">Reset</button>
+    </form>
+    <div class="mainContent">
+        <div class="header">BattleShip</div>
+        <div class="turns">PLAYER TURN!</div>
+        <div class="board">
+            <div class="playerSide">
+                <div class="title">Player</div>
+                <div class="playerBoardContainer">
+                </div>
+            </div>
+            <div class="computerSide">
+                <div class="title">Computer</div>
+                <div class="computerBoardContainer">
+                    <div class="computerBoard">
+                        <div class="box" data-y="0" data-x="0"><div class="symbol"></div></div>
+                        <div class="box" data-y="0" data-x="1"><div class="symbol"></div></div>
+                        <div class="box" data-y="0" data-x="2"><div class="symbol"></div></div>
+                        <div class="box" data-y="0" data-x="3"><div class="symbol"></div></div>
+                        <div class="box" data-y="0" data-x="4"><div class="symbol"></div></div>
+                        <div class="box" data-y="0" data-x="5"><div class="symbol"></div></div>
+                        <div class="box" data-y="0" data-x="6"><div class="symbol"></div></div>
+                        <div class="box" data-y="0" data-x="7"><div class="symbol"></div></div>
+                        <div class="box" data-y="0" data-x="8"><div class="symbol"></div></div>
+                        <div class="box" data-y="0" data-x="9"><div class="symbol"></div></div>
+                        <div class="box" data-y="1" data-x="0"><div class="symbol"></div></div>
+                        <div class="box" data-y="1" data-x="1"><div class="symbol"></div></div>
+                        <div class="box" data-y="1" data-x="2"><div class="symbol"></div></div>
+                        <div class="box" data-y="1" data-x="3"><div class="symbol"></div></div>
+                        <div class="box" data-y="1" data-x="4"><div class="symbol"></div></div>
+                        <div class="box" data-y="1" data-x="5"><div class="symbol"></div></div>
+                        <div class="box" data-y="1" data-x="6"><div class="symbol"></div></div>
+                        <div class="box" data-y="1" data-x="7"><div class="symbol"></div></div>
+                        <div class="box" data-y="1" data-x="8"><div class="symbol"></div></div>
+                        <div class="box" data-y="1" data-x="9"><div class="symbol"></div></div>
+                        <div class="box" data-y="2" data-x="0"><div class="symbol"></div></div>
+                        <div class="box" data-y="2" data-x="1"><div class="symbol"></div></div>
+                        <div class="box" data-y="2" data-x="2"><div class="symbol"></div></div>
+                        <div class="box" data-y="2" data-x="3"><div class="symbol"></div></div>
+                        <div class="box" data-y="2" data-x="4"><div class="symbol"></div></div>
+                        <div class="box" data-y="2" data-x="5"><div class="symbol"></div></div>
+                        <div class="box" data-y="2" data-x="6"><div class="symbol"></div></div>
+                        <div class="box" data-y="2" data-x="7"><div class="symbol"></div></div>
+                        <div class="box" data-y="2" data-x="8"><div class="symbol"></div></div>
+                        <div class="box" data-y="2" data-x="9"><div class="symbol"></div></div>
+                        <div class="box" data-y="3" data-x="0"><div class="symbol"></div></div>
+                        <div class="box" data-y="3" data-x="1"><div class="symbol"></div></div>
+                        <div class="box" data-y="3" data-x="2"><div class="symbol"></div></div>
+                        <div class="box" data-y="3" data-x="3"><div class="symbol"></div></div>
+                        <div class="box" data-y="3" data-x="4"><div class="symbol"></div></div>
+                        <div class="box" data-y="3" data-x="5"><div class="symbol"></div></div>
+                        <div class="box" data-y="3" data-x="6"><div class="symbol"></div></div>
+                        <div class="box" data-y="3" data-x="7"><div class="symbol"></div></div>
+                        <div class="box" data-y="3" data-x="8"><div class="symbol"></div></div>
+                        <div class="box" data-y="3" data-x="9"><div class="symbol"></div></div>
+                        <div class="box" data-y="4" data-x="0"><div class="symbol"></div></div>
+                        <div class="box" data-y="4" data-x="1"><div class="symbol"></div></div>
+                        <div class="box" data-y="4" data-x="2"><div class="symbol"></div></div>
+                        <div class="box" data-y="4" data-x="3"><div class="symbol"></div></div>
+                        <div class="box" data-y="4" data-x="4"><div class="symbol"></div></div>
+                        <div class="box" data-y="4" data-x="5"><div class="symbol"></div></div>
+                        <div class="box" data-y="4" data-x="6"><div class="symbol"></div></div>
+                        <div class="box" data-y="4" data-x="7"><div class="symbol"></div></div>
+                        <div class="box" data-y="4" data-x="8"><div class="symbol"></div></div>
+                        <div class="box" data-y="4" data-x="9"><div class="symbol"></div></div>
+                        <div class="box" data-y="5" data-x="0"><div class="symbol"></div></div>
+                        <div class="box" data-y="5" data-x="1"><div class="symbol"></div></div>
+                        <div class="box" data-y="5" data-x="2"><div class="symbol"></div></div>
+                        <div class="box" data-y="5" data-x="3"><div class="symbol"></div></div>
+                        <div class="box" data-y="5" data-x="4"><div class="symbol"></div></div>
+                        <div class="box" data-y="5" data-x="5"><div class="symbol"></div></div>
+                        <div class="box" data-y="5" data-x="6"><div class="symbol"></div></div>
+                        <div class="box" data-y="5" data-x="7"><div class="symbol"></div></div>
+                        <div class="box" data-y="5" data-x="8"><div class="symbol"></div></div>
+                        <div class="box" data-y="5" data-x="9"><div class="symbol"></div></div>
+                        <div class="box" data-y="6" data-x="0"><div class="symbol"></div></div>
+                        <div class="box" data-y="6" data-x="1"><div class="symbol"></div></div>
+                        <div class="box" data-y="6" data-x="2"><div class="symbol"></div></div>
+                        <div class="box" data-y="6" data-x="3"><div class="symbol"></div></div>
+                        <div class="box" data-y="6" data-x="4"><div class="symbol"></div></div>
+                        <div class="box" data-y="6" data-x="5"><div class="symbol"></div></div>
+                        <div class="box" data-y="6" data-x="6"><div class="symbol"></div></div>
+                        <div class="box" data-y="6" data-x="7"><div class="symbol"></div></div>
+                        <div class="box" data-y="6" data-x="8"><div class="symbol"></div></div>
+                        <div class="box" data-y="6" data-x="9"><div class="symbol"></div></div>
+                        <div class="box" data-y="7" data-x="0"><div class="symbol"></div></div>
+                        <div class="box" data-y="7" data-x="1"><div class="symbol"></div></div>
+                        <div class="box" data-y="7" data-x="2"><div class="symbol"></div></div>
+                        <div class="box" data-y="7" data-x="3"><div class="symbol"></div></div>
+                        <div class="box" data-y="7" data-x="4"><div class="symbol"></div></div>
+                        <div class="box" data-y="7" data-x="5"><div class="symbol"></div></div>
+                        <div class="box" data-y="7" data-x="6"><div class="symbol"></div></div>
+                        <div class="box" data-y="7" data-x="7"><div class="symbol"></div></div>
+                        <div class="box" data-y="7" data-x="8"><div class="symbol"></div></div>
+                        <div class="box" data-y="7" data-x="9"><div class="symbol"></div></div>
+                        <div class="box" data-y="8" data-x="0"><div class="symbol"></div></div>
+                        <div class="box" data-y="8" data-x="1"><div class="symbol"></div></div>
+                        <div class="box" data-y="8" data-x="2"><div class="symbol"></div></div>
+                        <div class="box" data-y="8" data-x="3"><div class="symbol"></div></div>
+                        <div class="box" data-y="8" data-x="4"><div class="symbol"></div></div>
+                        <div class="box" data-y="8" data-x="5"><div class="symbol"></div></div>
+                        <div class="box" data-y="8" data-x="6"><div class="symbol"></div></div>
+                        <div class="box" data-y="8" data-x="7"><div class="symbol"></div></div>
+                        <div class="box" data-y="8" data-x="8"><div class="symbol"></div></div>
+                        <div class="box" data-y="8" data-x="9"><div class="symbol"></div></div>
+                        <div class="box" data-y="9" data-x="0"><div class="symbol"></div></div>
+                        <div class="box" data-y="9" data-x="1"><div class="symbol"></div></div>
+                        <div class="box" data-y="9" data-x="2"><div class="symbol"></div></div>
+                        <div class="box" data-y="9" data-x="3"><div class="symbol"></div></div>
+                        <div class="box" data-y="9" data-x="4"><div class="symbol"></div></div>
+                        <div class="box" data-y="9" data-x="5"><div class="symbol"></div></div>
+                        <div class="box" data-y="9" data-x="6"><div class="symbol"></div></div>
+                        <div class="box" data-y="9" data-x="7"><div class="symbol"></div></div>
+                        <div class="box" data-y="9" data-x="8"><div class="symbol"></div></div>
+                        <div class="box" data-y="9" data-x="9"><div class="symbol"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Copyright @NullPtr</div>
+    </div>
+    <div class="finish">
+        <div class="whowon">PLAYER WINS!</div>
+        <button class="restart">RESTART</button>
+    </div>
+</body>
+</html>
