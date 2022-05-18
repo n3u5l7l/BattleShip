@@ -50,9 +50,9 @@ class GameBoard {
 
       if (this.checkAllSunk(THIS_SHIP_INFO)) {
         if (target.parentNode.className === "playerBoard") {
-          console.log("ENEMY WIN!");
+          this.endGame("enemy");
         } else {
-          console.log("PLAYER WIN!");
+          this.endGame("player");
         }
       }
       return THIS_BOARD[y][x]; //notify computerAi to start doing smart moves
@@ -120,6 +120,19 @@ class GameBoard {
     document.querySelectorAll(".playerBoard > div").forEach((box) => {
       box.style.pointerEvents = "none";
     });
+  }
+  endGame(whowon) {
+    if (whowon === "player") {
+      document.querySelector(".whowon").textContent = "PLAYER WON!";
+    } else {
+      document.querySelector(".whowon").textContent = "ENEMY WON!";
+    }
+    document.querySelector(".finish").style.display = "flex";
+    document.querySelector(".finish").clientHeight;
+    document.querySelector(".finish").style.opacity = "1";
+    
+    document.querySelector(".mainContent").style.filter = "blur(4px)";
+    document.querySelector(".mainContent").style.pointerEvents = "none";
   }
 
   switchTurn() {
