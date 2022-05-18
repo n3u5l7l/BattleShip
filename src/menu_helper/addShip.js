@@ -31,6 +31,8 @@ import { activeBox, errorBox } from "./highlightShip.js";
 
 import { addBeginButton } from "./beginButton.js";
 
+import { enemy } from "../factories/Player.js";
+
 let shipUsed = { count: 0 };
 let currFour = true;
 let currThree = false;
@@ -93,6 +95,8 @@ if (vertical) {
 if (whatBoard === "playerBoard" && event != "noEvent") {
     currFour = false;
     document.querySelector(".selectShip").textContent = "";
+    document.querySelector(".whatOption").textContent =
+    "Place your three-block ship";
     currThree = true;
     generateThree();
 }
@@ -229,6 +233,8 @@ if (whatBoard === "playerBoard" && event != "noEvent") {
     shipUsed.count = 0;
     currThree = false;
     document.querySelector(".selectShip").textContent = "";
+    document.querySelector(".whatOption").textContent =
+    "Place your two-block ship";
     generateTwo();
     currTwo = true;
     }
@@ -335,6 +341,8 @@ if (whatBoard === "playerBoard" && event != "noEvent") {
     shipUsed.count = 0;
     currTwo = false;
     document.querySelector(".selectShip").textContent = "";
+    document.querySelector(".whatOption").textContent =
+    "Place your one-block ship";
     generateOne();
     currOne = true;
     }
@@ -393,6 +401,7 @@ document.querySelectorAll(".active").forEach((box) => {
 });
 
 gameBoard.reset();
+enemy.reset();
 
 currFour = true;
 currThree = false;
