@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    font-size:1vw;
+}
+body{
+    padding:0;
+    margin:0;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    min-width: 100vw;
+}
+
+form{
+    background-color: white;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:5px;
+}
+.mainContent{
+    display:none;
+    width:100%;
+    height:100vh;
+    flex-direction: column;
+}
+
+.grid{
+    display:inline-grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+}
+.box{
+    position: relative;
+    border:1px solid;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width:32px;
+    height:32px;
+    display:none;
+}
+
+
+.selectShip{
+    height:80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.shipPart{
+    background-color: green;
+    border: 1px solid;
+
+}
+
+.header, .whatOption{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.active{
+    background-color: green;
+}
+.error{
+    background-color: red;
+}
+.perm{
+    background-color: green;
+}
+
+.oneBlockShip, .twoBlockShip, .threeBlockShip, .fourBlockShip{
+    cursor: move;
+}
+.twoBlockShip{
+    display: grid;
+    grid-template-columns: repeat(2, 20px);
+    grid-template-rows: 20px;
+}
+.oneBlockShip{
+    display: grid;
+    grid-template-columns: 20px;
+    grid-template-rows: 20px;
+}
+.threeBlockShip{
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    grid-template-rows: 20px;
+}
+.fourBlockShip{
+    display: grid;
+    grid-template-columns: repeat(4, 20px);
+    grid-template-rows: 20px;
+}
+
+[data-ship]{
+    background-color: green;
+}
+
+/* After player pressed begin the game */
+
+.header{
+    display:flex;
+    justify-content: center;
+    font-size: max(40px, 1.5rem);
+    font-weight: bolder;
+}
+.turns, .footer{
+    display:flex;
+    justify-content: center;
+    font-size: max(20px, 1.5rem);
+    font-weight: bolder;
+}
+.turns{
+    flex:1;
+    align-items: center;
+}
+.footer{
+    margin-top:17.333px;
+}
+
+.board{
+    display:flex;
+    flex:4;
+    gap:20px;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.playerSide, .computerSide{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: max(15px, 1.5rem);
+}
+.playerBoardContainer, .computerBoardContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+}
+.playerBoard, .computerBoard{
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(10, 33px);
+    grid-template-rows: repeat(10, 33px);
+    user-select: none;
+}
+
+.resetBackground{
+    background-color: white;
+}
+
+.shipAnimation, .noShipAnimate{
+    animation-duration: 50ms;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-fill-mode: backwards;
+    animation-name: explosion;
+}
+.shipAnimation{
+    color:red;
+    background-color: darkgrey;
+    border:2px solid red;
+}
+.symbol{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    font-size:33px;
+    width:100%;
+    height:100%;
+}
+@keyframes explosion {
+    from{
+       transform: scale(1);
+   }
+
+   to{
+       transform: scale(1.15);
+       background-color:red;
+   }
+}
+
+/* Win Result Announce */
+
+.finish{
+    display:none;
+        position: absolute; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    gap:5px;
+    width:100%;
+    height:100%;
+    font-weight: bolder;
+    font-size: max(24px, 1.5rem);
+    opacity: 0;
+    transition: 1s opacity ease-in-out;
+}
+.whowon{
+    width:max-content;
+}
+.restart{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #d4d4d4;
+    font-weight: bolder;
+}
