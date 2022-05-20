@@ -23,6 +23,25 @@ form{
     flex-direction: column;
     gap:5px;
 }
+
+button.randomize, button.reset, button.rotate{
+    align-self: stretch;
+    background-color: beige;
+    border-image-slice: 1;
+    border-left:none; border-right:none;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #70ab2c, #240519);
+    cursor: pointer;
+}
+
+button.begin{
+    background-color: black;
+    color:white;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #70ab2c, #240519);
+    cursor: pointer;
+}
 .mainContent{
     display:none;
     width:100%;
@@ -215,4 +234,5 @@ img{
     border-radius: 5px;
     background-color: #d4d4d4;
     font-weight: bolder;
+    cursor: pointer
 }
