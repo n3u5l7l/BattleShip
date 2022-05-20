@@ -142,13 +142,13 @@ class Player {
       this.#foundDirMove.y = this.#foundDirMove.y + this.#foundDirLength + 1;
       this.#foundDir = "down";
     } else if (this.#foundDirMove.y > 9) {
-      this.#foundDirMove.y = this.#foundDirMove.y - this.#foundDirLength + 1;
+      this.#foundDirMove.y = this.#foundDirMove.y - (this.#foundDirLength + 1);
       this.#foundDir = "up";
     } else if (this.#foundDirMove.x < 0) {
       this.#foundDirMove.x = this.#foundDirMove.x + this.#foundDirLength + 1;
       this.#foundDir = "right";
     } else if (this.#foundDirMove.x > 9) {
-      this.#foundDirMove.x = this.#foundDirMove.x - this.#foundDirLength + 1;
+      this.#foundDirMove.x = this.#foundDirMove.x - (this.#foundDirLength + 1);
       this.#foundDir = "left";
     } else if (this.#alreadyHit[this.#foundDirMove.y][this.#foundDirMove.x]) {
       switch (this.#foundDir) {
